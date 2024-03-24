@@ -1,3 +1,13 @@
+import axios from "axios";
+
+export const getTeamData = async () => {
+  try {
+    const response = await axios.get("https://randomuser.me/api/?results=3");
+    return response.data.results;
+  } catch (error) {
+    console.log(error);
+  }
+};
 // Import Gambar terkait teams
 import img1 from "../../public/assets/img/01.webp";
 import img2 from "../../public/assets/img/15.webp";
@@ -20,3 +30,4 @@ export const teams = [
     role: "Project Manager",
   },
 ];
+
