@@ -20,12 +20,13 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
               menghadapi tantangan teknologi yang kompleks.
             </p>
           </div>
-          <div className="w-full lg:w-8/12">
+          <div className="w-full lg:w-8/12 relative hidden lg:block">
             <Image
               src="/assets/img/Rectangle-116.png"
               alt="Full of Teams"
               width={733}
               height={415}
+              className="rounded-[6rem] rounded-br-none rounded-tl-none"
             />
           </div>
         </div>
