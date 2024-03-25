@@ -28,7 +28,10 @@ const Testimonial: React.FunctionComponent<ITestimonialProps> = (props) => {
   };
   return (
     <CenterAligner className="bg-[#ffffff] px-5 py-8">
-      <h1 className="text-center text-2xl font-bold sm:text-3xl pb-8">
+      <h1
+        className="text-center text-2xl font-bold sm:text-3xl pb-8"
+        id="testimonial"
+      >
         Testimonial
       </h1>
       {/* Container for the slider */}

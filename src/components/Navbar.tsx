@@ -1,9 +1,8 @@
 "use client";
 import { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Container from "./Container";
 import { FaSearch } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 interface INavbarProps {}
 
 const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
@@ -19,28 +18,42 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <a
-                    href="/"
-                    className="uppercase text-[#414141] font-extrabold"
+                  <Link
+                    to="/"
+                    className="uppercase text-[#414141] font-extrabold cursor-pointer"
+                    smooth={true}
+                    duration={500}
                   >
                     twiscode
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="hidden md:block">
                 <div className="ml-4 flex items-center space-x-4">
-                  <a
-                    href="/"
-                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                  <Link
+                    to=""
+                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                    smooth={true}
+                    duration={500}
                   >
                     Home
-                  </a>
-                  <a
-                    href="/"
-                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                  </Link>
+                  <Link
+                    to="testimonial"
+                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                    smooth={true}
+                    duration={500}
+                  >
+                    Testimonial
+                  </Link>
+                  <Link
+                    to="about"
+                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                    smooth={true}
+                    duration={500}
                   >
                     About
-                  </a>
+                  </Link>
                   <a
                     href="/"
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
