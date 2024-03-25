@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 
-interface IAboutProps {
+interface IAboutPageProps {
   name?: {
     first?: string;
     last?: string;
@@ -17,8 +17,8 @@ interface IAboutProps {
   };
 }
 
-const About: React.FunctionComponent<IAboutProps> = (props) => {
-  const [team, setTeam] = useState<IAboutProps[]>([]);
+const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
+  const [team, setTeam] = useState<IAboutPageProps[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,7 +40,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
           <div className="flex flex-col lg:flex-row justify-between gap-8">
             <div className="w-full lg:w-5/12 flex flex-col justify-center">
               <h1 className="text-2xl lg:text-3xl font-bold leading-9 text-gray-800 dark:text-black pb-4 text-center">
-                About Us
+                AboutPage Us
               </h1>
               <p className="font-normal text-base leading-6 text-gray-600 dark:text-black md:text-justify text-justify">
                 Twiscode adalah perusahaan teknologi yang berfokus pada
@@ -151,4 +151,4 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
   );
 };
 
-export default About;
+export default AboutPage;
