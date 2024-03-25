@@ -1,8 +1,7 @@
-"use client";
 import { useState } from "react";
 import Container from "./Container";
-import { FaSearch } from "react-icons/fa";
 import { Link } from "react-scroll";
+
 interface INavbarProps {}
 
 const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
@@ -10,12 +9,13 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
   const handleNav = () => {
     setNav(!nav);
   };
+
   return (
     <header className="bg-white">
       <Container>
         <nav>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <div className="flex items-center justify-between w-full h-16">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <Link
@@ -28,13 +28,13 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                   </Link>
                 </div>
               </div>
-              <div className="hidden md:block">
+              <div className="hidden md:flex flex-grow justify-center">
                 <div className="ml-4 flex items-center space-x-4">
                   <Link
                     to=""
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
                     smooth={true}
-                    duration={500}
+                    duration={1000}
                   >
                     Home
                   </Link>
@@ -42,7 +42,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                     to="testimonial"
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
                     smooth={true}
-                    duration={500}
+                    duration={1000}
                   >
                     Testimonial
                   </Link>
@@ -50,32 +50,40 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                     to="about"
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
                     smooth={true}
-                    duration={500}
+                    duration={1000}
                   >
                     About
                   </Link>
-                  <a
-                    href="/"
-                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                  <Link
+                    to="services"
+                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                    smooth={true}
+                    duration={1000}
                   >
                     Service
-                  </a>
-                  <a
-                    href="/"
-                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                  </Link>
+                  <Link
+                    to="teams"
+                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                    smooth={true}
+                    duration={1000}
                   >
-                    Team
-                  </a>
-                  <a
-                    href="/"
-                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                    Teams
+                  </Link>
+                  <Link
+                    to="articles"
+                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                    smooth={true}
+                    duration={1000}
                   >
                     Article
-                  </a>
-                  <a href="/" className="text-black rounded-lg p-2">
-                    <FaSearch />
-                  </a>
+                  </Link>
                 </div>
+              </div>
+              <div className="hidden md:flex items-center space-x-4">
+                <span className="text-black rounded-lg p-2 hover:bg-blue-400 hover:text-white hover:underline hover:underline-offset-8 cursor-pointer">
+                  Login
+                </span>
               </div>
               <div className="md:hidden flex items-center">
                 <button
@@ -120,30 +128,46 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
           {nav && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 absolute">
-                <a
-                  href="/"
-                  className="text-black block hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                <Link
+                  to=""
+                  className="text-black block hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                  smooth={true}
+                  duration={500}
                 >
                   Home
-                </a>
-                <a
-                  href="/"
-                  className="text-black block hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                </Link>
+                <Link
+                  to="testimonial"
+                  className="text-black block hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
+                  Testimonial
+                </Link>
+                <Link
+                  to="about"
+                  className="text-black hover:bg-black block hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                  smooth={true}
+                  duration={500}
                 >
                   About
-                </a>
-                <a
-                  href="/"
-                  className="text-black block hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                </Link>
+                <Link
+                  to="services"
+                  className="text-black hover:bg-black block hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                  smooth={true}
+                  duration={500}
                 >
-                  Service
-                </a>
-                <a
-                  href="/"
-                  className="text-black block hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
+                  Services
+                </Link>
+                <Link
+                  to="teams"
+                  className="text-black hover:bg-black block hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
+                  smooth={true}
+                  duration={500}
                 >
-                  Team
-                </a>
+                  Teams
+                </Link>
               </div>
             </div>
           )}
