@@ -47,13 +47,12 @@ const Teams: React.FunctionComponent<ITeamsProps> = (props) => {
               <Image
                 unoptimized
                 src={user.picture?.large || "/default-image.jpg"}
-                alt={`${user.name.first} ${user.name.last}`}
+                alt={`${user.name?.first} ${user.name?.last}`}
                 width={50}
                 height={50}
                 className="mx-auto w-24 h-24 rounded-full mb-2"
               />
               <p className="font-bold">{`${user.name?.first} ${user.name?.last}`}</p>
-              <p className="font-bold">{`${user.name.first} ${user.name.last}`}</p>
             </li>
           ))}
         </ul>
