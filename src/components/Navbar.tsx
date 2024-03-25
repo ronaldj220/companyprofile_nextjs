@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Container from "./Container";
-import { Link } from "react-scroll";
+import Link from "next/link";
 
 interface INavbarProps {}
 
@@ -19,10 +19,8 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <Link
-                    to="/"
+                    href="/"
                     className="uppercase text-[#414141] font-extrabold cursor-pointer"
-                    smooth={true}
-                    duration={500}
                   >
                     twiscode
                   </Link>
@@ -31,50 +29,33 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
               <div className="hidden md:flex flex-grow justify-center">
                 <div className="ml-4 flex items-center space-x-4">
                   <Link
-                    to=""
+                    href="/"
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                    smooth={true}
-                    duration={1000}
                   >
                     Home
                   </Link>
+
                   <Link
-                    to="testimonial"
+                    href="/about"
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                    smooth={true}
-                    duration={1000}
-                  >
-                    Testimonial
-                  </Link>
-                  <Link
-                    to="about"
-                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                    smooth={true}
-                    duration={1000}
                   >
                     About
                   </Link>
                   <Link
-                    to="services"
+                    href="/services"
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                    smooth={true}
-                    duration={1000}
                   >
                     Service
                   </Link>
                   <Link
-                    to="teams"
+                    href="/teams"
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                    smooth={true}
-                    duration={1000}
                   >
                     Teams
                   </Link>
                   <Link
-                    to="articles"
+                    href="/articles"
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                    smooth={true}
-                    duration={1000}
                   >
                     Article
                   </Link>
@@ -129,42 +110,32 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 absolute">
                 <Link
-                  to=""
+                  href=""
                   className="text-black block hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                  smooth={true}
-                  duration={500}
                 >
                   Home
                 </Link>
                 <Link
-                  to="testimonial"
+                  href="testimonial"
                   className="text-black block hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                  smooth={true}
-                  duration={500}
                 >
                   Testimonial
                 </Link>
                 <Link
-                  to="about"
+                  href="about"
                   className="text-black hover:bg-black block hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                  smooth={true}
-                  duration={500}
                 >
                   About
                 </Link>
                 <Link
-                  to="services"
+                  href="services"
                   className="text-black hover:bg-black block hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                  smooth={true}
-                  duration={500}
                 >
                   Services
                 </Link>
                 <Link
-                  to="teams"
+                  href="teams"
                   className="text-black hover:bg-black block hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
-                  smooth={true}
-                  duration={500}
                 >
                   Teams
                 </Link>

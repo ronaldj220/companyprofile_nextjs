@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "./Container";
+import Link from "next/link";
 
 interface IAboutProps {}
 
@@ -22,6 +23,14 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
               mitra terpercaya bagi berbagai perusahaan di seluruh dunia dalam
               menghadapi tantangan teknologi yang kompleks.
             </p>
+            <div className="flex justify-center">
+              <Link
+                href="/about"
+                className="bg-orange-500 text-white p-2 rounded-full"
+              >
+                Read More
+              </Link>
+            </div>
           </div>
           <div className="w-full lg:w-8/12 relative hidden lg:block">
             <Image
