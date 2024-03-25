@@ -40,7 +40,7 @@ const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
           <div className="flex flex-col lg:flex-row justify-between gap-8">
             <div className="w-full lg:w-5/12 flex flex-col justify-center">
               <h1 className="text-2xl lg:text-3xl font-bold leading-9 text-gray-800 dark:text-black pb-4 text-center">
-                AboutPage Us
+                About Us
               </h1>
               <p className="font-normal text-base leading-6 text-gray-600 dark:text-black md:text-justify text-justify">
                 Twiscode adalah perusahaan teknologi yang berfokus pada
@@ -152,3 +152,4 @@ const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
 };
 
 export default AboutPage;
+
