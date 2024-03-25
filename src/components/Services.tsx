@@ -2,7 +2,6 @@ import * as React from "react";
 import Container from "./Container";
 import { FaChrome, FaMobile, FaUser } from "react-icons/fa";
 
-
 interface IServicesProps {}
 
 const Services: React.FunctionComponent<IServicesProps> = (props) => {
@@ -39,9 +38,10 @@ const Services: React.FunctionComponent<IServicesProps> = (props) => {
                 <h3 className="font-semibold text-xl text-center">
                   Web Developer
                 </h3>
-                <p className="mt-1 text-gray-500">
-                  You can make sure your website or app is highly performant
-                  with a built-in system to help you optimize.
+                <p className="mt-1 text-gray-500 text-justify">
+                  Membangun situs web interaktif dan responsif dengan koding
+                  yang canggih, memadukan desain dan fungsionalitas untuk
+                  menciptakan pengalaman online yang menarik dan efisien.
                 </p>
               </div>
             </div>
