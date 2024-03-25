@@ -8,3 +8,4 @@ export const getTeamData = async () => {
     console.log(error);
   }
 };
+
