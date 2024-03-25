@@ -10,7 +10,7 @@ interface ITeamsProps {
     first?: string;
     last?: string;
   };
-  picture: {
+  picture?: {
     large: string;
   };
 }
@@ -47,8 +47,6 @@ const Teams: React.FunctionComponent<ITeamsProps> = (props) => {
               <Image
                 unoptimized
                 src={user.picture?.large || "/default-image.jpg"}
-                alt={`${user.name?.first} ${user.name?.last}`}
-                src={user.picture.large}
                 alt={`${user.name.first} ${user.name.last}`}
                 width={50}
                 height={50}
