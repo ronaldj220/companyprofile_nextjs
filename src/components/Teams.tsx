@@ -10,7 +10,7 @@ interface ITeamsProps {
     first?: string;
     last?: string;
   };
-  picture: {
+  picture?: {
     large: string;
   };
 }
@@ -48,14 +48,11 @@ const Teams: React.FunctionComponent<ITeamsProps> = (props) => {
                 unoptimized
                 src={user.picture?.large || "/default-image.jpg"}
                 alt={`${user.name?.first} ${user.name?.last}`}
-                src={user.picture.large}
-                alt={`${user.name.first} ${user.name.last}`}
                 width={50}
                 height={50}
                 className="mx-auto w-24 h-24 rounded-full mb-2"
               />
               <p className="font-bold">{`${user.name?.first} ${user.name?.last}`}</p>
-              <p className="font-bold">{`${user.name.first} ${user.name.last}`}</p>
             </li>
           ))}
         </ul>
