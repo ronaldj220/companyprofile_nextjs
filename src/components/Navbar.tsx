@@ -35,7 +35,6 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
                     smooth={true}
                     duration={1000}
-                    duration={500}
                   >
                     Home
                   </Link>
@@ -44,7 +43,6 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
                     smooth={true}
                     duration={1000}
-                    duration={500}
                   >
                     Testimonial
                   </Link>
@@ -61,13 +59,6 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                     className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2 cursor-pointer"
                     smooth={true}
                     duration={1000}
-                    duration={500}
-                  >
-                    About
-                  </Link>
-                  <a
-                    href="/"
-                    className="text-black hover:bg-black hover:text-white hover:underline hover:underline-offset-8 rounded-lg p-2"
                   >
                     Service
                   </Link>
