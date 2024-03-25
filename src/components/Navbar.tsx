@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Container from "./Container";
 import { Link } from "react-scroll";
-import { FaSearch } from "react-icons/fa";
-import { Link } from "react-scroll";
+
 interface INavbarProps {}
 
 const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
