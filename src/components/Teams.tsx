@@ -27,7 +27,7 @@ const Teams: React.FunctionComponent<ITeamsProps> = (props) => {
     fetchData();
   }, []);
   return (
-    <div className="container flex justify-center mx-auto">
+    <div className="container flex justify-center mx-auto" id="teams">
       <div>
         <p className="text-gray-700 text-4xl text-center font-semibold mb-7">
           Our Team
