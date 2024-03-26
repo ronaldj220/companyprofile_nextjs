@@ -1,3 +1,7 @@
 {
-    "workbench.colorTheme": "Atom One Dark"
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 2,
+    "editor.letterSpacing": 1,
+    "terminal.integrated.fontSize": 12
 }

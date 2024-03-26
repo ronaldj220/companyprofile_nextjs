@@ -6,7 +6,7 @@ import CenterAligner from "./CenterAligner";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import { testimonials } from "@/datas/testimonial";
+import { testimonials } from "@/utils/testimonial";
 import Image from "next/image";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import {

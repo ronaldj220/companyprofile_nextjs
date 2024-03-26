@@ -1,7 +1,6 @@
 "use client";
-import { getTeamData } from "@/datas/teams";
+import { getTeamData } from "@/utils/teams";
 import Image from "next/image";
-import * as React from "react";
 import { useState, useEffect } from "react";
 import { ReactTyped } from "react-typed";
 
