@@ -1,6 +1,7 @@
 import * as React from "react";
 import Container from "./Container";
 import { FaChrome, FaMobile, FaUser } from "react-icons/fa";
+import Link from "next/link";
 
 interface IServicesProps {}
 
@@ -12,7 +13,7 @@ const Services: React.FunctionComponent<IServicesProps> = (props) => {
           <p className="text-gray-700 text-4xl text-center font-semibold mb-5">
             What We Do?
           </p>
-          <div className="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 mt-16 px-5 mb-20">
+          <div className="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 mt-16 px-5 mb-10">
             <div className="flex gap-4 items-center flex-col ">
               <span className="text-violet-600 bg-violet-500/10 p-3 rounded-full">
                 <FaMobile />
@@ -62,6 +63,14 @@ const Services: React.FunctionComponent<IServicesProps> = (props) => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center mb-10">
+            <Link
+              href="/services"
+              className="bg-orange-400 text-white p-2 rounded-full"
+            >
+              Learn More
+            </Link>
           </div>
         </div>
       </Container>

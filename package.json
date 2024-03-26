@@ -12,6 +12,7 @@
     "@types/react-slick": "^0.23.13",
     "axios": "^1.6.8",
     "contentful": "^10.8.6",
+    "framer-motion": "^11.0.20",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
@@ -19,6 +20,7 @@
     "react-scroll": "^1.9.0",
     "react-slick": "^0.30.2",
     "react-typed": "^2.0.12",
+    "sharp": "^0.33.3",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
