@@ -5,6 +5,7 @@ import { ReactTyped } from "react-typed";
 import { useState, useEffect } from "react";
 import { getblogPost } from "@/utils/contentful";
 import Image from "next/image";
+import * as React from "react";
 
 interface IArticlesProps {}
 
