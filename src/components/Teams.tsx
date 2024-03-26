@@ -1,6 +1,7 @@
 "use client";
 import { getTeamData } from "@/utils/teams";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { ReactTyped } from "react-typed";
 
@@ -55,6 +56,14 @@ const Teams: React.FunctionComponent<ITeamsProps> = (props) => {
             </li>
           ))}
         </ul>
+        <div className="flex justify-center">
+          <Link
+            href="/teams"
+            className="bg-orange-500 text-white rounded-full p-2"
+          >
+            Learn More
+          </Link>
+        </div>
       </div>
     </div>
   );
