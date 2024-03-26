@@ -4,6 +4,7 @@ import Image from "next/image";
 import * as React from "react";
 import Description from "./Description";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface ISliderProps {}
 
@@ -58,6 +59,11 @@ const Slider: React.FunctionComponent<ISliderProps> = (props) => {
             clickPrev={clickPrev}
             cickNext={clickNext}
           />
+        </div>
+        <div>
+          <Link href="/" className="bg-orange-500 text-white rounded-full p-2">
+            Kembali
+          </Link>
         </div>
       </div>
     </div>
